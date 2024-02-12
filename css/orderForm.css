@@ -1,0 +1,15 @@
+body{
+    background-color: antiquewhite;
+}
+.oForm{
+    border: 2px solid black;
+}
+h1{
+    color: red;
+}
+input{
+    margin:3px;
+}
+form{
+    padding:10px;
+}

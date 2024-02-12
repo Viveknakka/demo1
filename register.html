@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+<style>
+#register{
+ background-color:#3e5987;
+ color: white;
+ border:2px solid white;
+ padding:40px;
+ width:fit-content;
+ height:fit-content;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+ font-size:20px;
+ animation:loginborderAnim;
+ animation-duration:10s;
+ animation-fill-mode: forwards;
+ animation-delay: 3s;
+ animation-iteration-count: infinite;
+ 
+}
+@keyframes loginborderAnim{
+     25%{
+        border:10px solid yellow;
+     }
+     50%{
+     border:8px solid #434352;
+     
+     }
+     75%{
+       border:10px solid red;
+     }
+     100%{
+      border:8px solid green;
+      }
+}
+
+body{
+background-color: #596476;
+margin-top:5%;
+ display:flex;
+  align-items:center;
+ justify-content:center;
+}
+a{
+   font-size:10px;
+   text-decoration:none;
+   color:white;
+   font-family:verdana,Arial;
+   float:right;
+   
+  }
+
+</style>
+</head>
+<body>
+  <div id="register">
+   <div><h1>Register</h1></div>
+ 
+  <form action="RegisterServlet" method="post">
+  <table>
+     <tr>
+        <td>
+           FirstName:
+        </td>
+         <td>
+            <input type="text" name="firstname" placeholder="enter your firstname">
+         </td>
+       </tr>
+       <tr>
+        <td>
+          LastName:
+        </td>
+         <td>
+            <input type="text" name="lastname" placeholder="enter your lastname">
+         </td>
+       </tr>
+       <tr>
+          <td>
+          Mobile No:
+          </td>
+          <td>
+           <input type="text" name="mobileno" placeholder="enter your mobile no" >
+          </td>
+       </tr>
+       <tr>
+           <td>
+             Email:
+            </td>
+            <td>
+              <input type="email" name="email" placeholder="enter your email" >
+            </td>
+       </tr>
+       <tr>
+           <td>
+              Gender:
+            </td>
+            
+            <td>
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female
+            <input type="radio" name="gender" value="others">others
+            </td>
+       </tr>
+       <tr>
+          <td>Address:</td>
+          <td><input type="text" name="address" placeholder="H-no,streetno,village"></td>
+          
+       </tr>
+       <tr>
+          <td>Village/Town:</td>
+          <td><input type="text" name="village" placeholder="village/town name"> </td>
+       </tr>
+       <tr>
+          <td>Mandal:</td>
+          <td><input type="text" name="mandal" placeholder="mandal name"> </td>
+       </tr>
+       <tr>
+          <td>District:</td>
+          <td><input type="text" name="district" placeholder="district name"> </td>
+       </tr>
+       <tr>
+          <td>Pin:</td>
+          <td><input type="text" name="pinno" placeholder="pin number"> </td>
+       </tr>
+       <tr>
+          <td>State:</td>
+          <td><input type="text" name="state" placeholder="state name"> </td>
+       </tr>
+       <tr>
+          <td>
+           UserName:
+          </td>
+          <td>
+           <input type="text" name="uname" placeholder="example@gmail.com">
+          </td>
+       </tr>
+       <tr>
+          <td>
+           Password:
+          </td>
+          <td>
+          <input type="password" name="password" >
+          </td>
+       </tr>
+       <tr>
+          <td>
+          Confirm Password:
+          </td>
+          <td>
+          <input type="password" name="password" >
+          </td>
+       </tr>
+       <tr>
+           <td>
+               <input type="submit">
+           </td>
+           <td>
+               <a href="./login.html">goto login here</a>
+   
+           </td>
+       </tr>
+     </table>
+
+  
+    
+  
+  </form>
+  
+  </div>
+</body>
+</html>

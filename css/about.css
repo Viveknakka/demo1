@@ -1,0 +1,28 @@
+body{
+  background-color: rgb(255, 0, 0);
+}
+p{
+         color: rgb(73, 255, 210);
+         font-family: arial,verdana,sant-serif;
+}
+h1
+{
+  text-align:justify;
+  border: 3px transparent red;
+  animation:welcome;
+  animation-duration: 5s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+@keyframes welcome {
+  0%{
+    
+    color:rgba(203, 125, 29, 0.644);
+  }
+  50%{
+    color:rgb(220, 86, 169);
+  }
+  100%{
+    color: aqua;
+  }
+}

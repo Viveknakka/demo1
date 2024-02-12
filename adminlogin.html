@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+#login{
+ background-color:#3e5987;
+ color:white;
+ border:2px solid white;
+ padding:40px;
+ width:fit-content;
+ height:fit-content;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+ font-size:20px;
+ animation:loginborderAnim;
+ animation-duration:10s;
+ animation-fill-mode: forwards;
+ animation-delay: 3s;
+ animation-iteration-count: infinite;
+ 
+}
+@keyframes loginborderAnim{
+     25%{
+        border:10px solid yellow;
+     }
+     50%{
+     border:8px solid #434352;
+     
+     }
+     75%{
+       border:10px solid red;
+     }
+     100%{
+      border:8px solid green;
+      }
+}
+
+body{
+background-color: #596476;
+margin-top:10%;
+ display:flex;
+  align-items:center;
+ justify-content:center;
+}
+a{
+   font-size:10px;
+   text-decoration:none;
+   color:white;
+   font-family:verdana,Arial;
+   float:right;
+   
+   }
+
+</style>
+</head>
+<body>
+  <div id="login">
+   <div><h1>Admin Login</h1></div>
+   <br>
+  <form action="AdminServlet" method="post" id="loginform">
+   <div>username:<input type="text" placeholder="enter your username" name="uname" required></div>
+   <br>
+   <div>password:<input type="password" name="password" required></div> 
+   <br>
+    <!--  <a href="./register.html">Register here</a>-->
+   <br>
+   <div><button type="submit" >Login as Admin</button></div>
+  </form>
+  
+  </div>
+ 
+</body>
+</html>
