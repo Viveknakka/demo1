@@ -41,7 +41,7 @@
 	      response.sendRedirect("login.html");
 	    out.println("<h1>YOUR ORDERS</h1><br>");
 	   Class.forName("oracle.jdbc.driver.OracleDriver");
-	   conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","vivek597","nakka597");
+	   conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","","");
 	   st=conn.createStatement();
 	   ResultSet rs=st.executeQuery("select * from orders where username='"+session.getAttribute("username")+"'");
       ResultSetMetaData rmd=rs.getMetaData();
